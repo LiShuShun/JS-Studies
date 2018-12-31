@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JaveScript</title>
+		<style type="text/css">
+			h1,p{
+				position:relative;
+			 text-align:center;
+			 top:200px;
+			}
+			body > div >div{
+				width:100px;
+				height:39px;
+				margin:0 auto;
+				
+				
+			}
+		body > div{
+			width:400px;
+			height:400px;
+			background:linear-gradient(to top,#F5F6F7,#EBEBEB,#EBEBEB,#CDCDCD);
+			margin:0 auto;
+		}
+		</style>
+		
+		<script>
+			/*function myfunction()
+			{
+				document.write("<h1> Is Lee!!</h1>");
+				
+			}*/
+			function myfunction()
+			{
+				x=document.getElementById("demo");
+				x.innerHTML="Hellow JavaScript!!";
+			}
+			
+		</script>
+	</head>
+	<body>
+	<div>
+		<!--<h1>what‘s your name </h1>
+		<p id="demo">First Name Last Name</p>
+		<div><button type="button" onclick="myfunction()">Please Onclick</button></div>
+		-->
+		<h1 id="demo">Bad JavaScript</h1>
+		<button type="button" onclick="myfunction()">点击查看</button>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function myfunction(){
+				var x ;
+				var d=new Date().getDay();			//调动这个函数//
+				switch (d)
+				{
+					case 0:
+					x="Today it's Sunday";
+					break;
+					case 1:
+					x="Today it's Monday";
+					break;
+					case 2:
+					x="Today it's Tuesday";
+					break;
+					case 3:
+					x="Today it's Wedensday";
+					break;
+					case 4:
+					x="Today it's THursday";
+					break;
+					case 5:
+					x="Today it's Friday";
+					break;
+					case 6:
+					x="Today it's Saturday";
+					break;
+				}
+				document.getElementById("demo").innerHTML=x;
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="demo"></h1>
+		<button type="button" onclick="myfunction()">今天星期几</button>
+	</body>
+</html>

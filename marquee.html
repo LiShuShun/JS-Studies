@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#audio1{
+			border-style:rideg;
+			border-color:#c3eefd;
+			border-width:15px;
+			}
+		</style>
+		<script>
+			function playmusic(){
+				document.getElementById("audio1").play();
+			}
+			
+		</script>
+	</head>
+	<body onload="playmusic();">
+		<div style="margin-left:40px;">
+			<h1>Music Plays without any Visible Player</h1>
+			<br><br>
+			
+			<audio id="audio1">
+				<source src="钢琴曲 - 钢琴曲.mp3"></source>
+				
+			</audio>
+			
+		</div>
+			
+	
+	</body>
+</html>

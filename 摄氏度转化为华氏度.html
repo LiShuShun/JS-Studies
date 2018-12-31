@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var cTemp = 100;
+			//在表达式里充分使用括号
+			var hTemp = ((cTemp*9) / 5)+32;		//将摄氏度转换为华氏度
+			document.write("Temperature in celsius :" + cTemp + "degrees" + "" +"<br>"); //摄氏度
+			document.write("Temperature in Fahrenheit:" + hTemp + "" +"degrees"+"<br>");	//华氏度
+		</script>
+		
+		<script>
+			function myfunction(){
+				window.alert('hello');
+			}
+			function youfunction(){
+				window.alert('Esson');
+			}
+			function sayhello(){
+				window.alert('sayHellow!!');
+			}
+		</script>
+		<script>
+			function countfunction(){
+				var x = 10;
+				var y = 2;
+				window.alert(x*y);
+			}
+		</script>
+		
+		<script>
+			function buttonReport(buttonID,buttonname,buttonValue){
+				//按钮的ID
+				var userMessage = "Button id:" + buttonID +"<br>";
+				//按钮的名称
+				var userMessage2 = "Button name:" + buttonname + "<br>";
+				//按钮值
+				var userMessage3 = "Button Value:" + buttonValue +"<br>";
+				//提醒用户
+			}
+			window.alert(userMessage + userMessage2 + userMessage3);
+		</script>
+	</head>
+	<body>
+		
+		<button type="button" onclick ="alert('You Clicked the button!')" value="Click">onClick me!</button>
+		<img src="../img/方向.jpg" alt="image 1"	 onmouseover="alert('You Entered the image!')">
+		<img src="../img/方向.jpg" alt="image 1"	 onmouseover="this.src='../img/方向1.jpg';" onmouseout="this.src='../img/方向.jpg';" title="这是一幅新的画！！">
+		<img src="../img/方向.jpg" alt="image 1" title="船舵航向！！" onclick ="alert('You Clicked the button!')"<br>
+		<button type="button" onclick ="myfunction()" value="Click">onClick hello!</button>
+		<br>
+		<button type="button" onclick ="youfunction()" value="Click">onClick Esson!</button><br>
+		<input type="button" value="Say Hello" onclick="sayhello()">
+		<input type="button" value="Say Hello" onclick="countfunction()">
+		<input type="button" value="Button" onclick="buttonReport()">
+	</body>
+</html>

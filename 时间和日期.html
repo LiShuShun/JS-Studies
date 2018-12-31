@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			/*new Date(year,month,day,hours,minutes,seconds,milliseconds); 	//自定义创建时间和日期；*/
+			/*var mydate = new Date();
+			document.write("Object created on day number" + "\n" + mydate.getDay() + "<br>");
+			mydate.setDate(15);
+			document.write("After amending date to 15th, the day number is " + mydate.getDay() + "<br>");
+			
+			var year = mydate.getFullYear(2018);
+			document.write("this is year" + mydate.getFullYear +"<br>");*/
+			
+			
+			/*var mydate = new Date(18,12,22);
+			document.write("今天是星期：" + mydate.getDay() + "<br>");
+			mydate.setDate(22);
+			document.write("after amending date to 15th,the day number is " + mydate.getDdy());
+			*/
+			
+			
+			/*var mydate = new Date();
+			document.write("Created:" + mydate.toDateString() + "" + mydate.toTimeString() +"<br>");
+			mydate.setDate(mydate.getDate()+33);		//给日期部分增加33天
+			document.write("After adding 33 days :" + mydate.toDateString() + "" + mydate.toTimeString());
+			*/
+			
+			/*var mydate = new Date(); //当前日期和时间
+			document.write("Object created on day number" + mydate.getDay() + "<br>");
+			mydate.setDate(15); 	//改成当月15日
+			document.write("After ameding date to 15th, the day number is" + mydate.getDay() +"<br>");
+			prompt(mydate);*/
+			
+			//取整
+			
+		/*	var mynumber1 = 12.55;
+			var mynumber2 = 12.45;
+			alert(Math.floor(mynumber1));
+			alert(Math.ceil(mynumber1));
+			alert(Math.round(mynumber1));
+			alert(Math.round(mynumber2));
+		*/
+			/*var ageDavid = 23;
+			var ageMary = 27;
+			var ageChris = 31;
+			var ageSandy = 19;
+			document.write("The oldest person is" + " " + Math.max(ageDavid,ageMary,ageChris,ageSandy) + "years old " +"<br>");
+			document.write("The youngest person is" + " " + Math.min(ageDavid,ageMary,ageChris,ageSandy) + "years old" + "<br>");
+			*/
+			/*var myNum1 = 12.55;
+			var myNum2 = 12.45;
+			alert(Math.floor(myNum1));
+			alert(Math.ceil(myNum1));
+			alert(Math.round(myNum1));
+			alert(Math.round(myNum2));
+			*/
+			/*function telltime(){
+			var out = "";
+			var now = new Date();
+			out += "<br>Date: " + now.getDate();
+			out += "<br>Month: " + now.getMonth();	//月份计数是从0（1月）开始，到11（12月）结束。
+			out += "<br>Year: " + now.getFullYear();
+			out += "<br>Hours: " + now.getHours();
+			out += "<br>Minutes: " + now.getMinutes();
+			out += "<br>Seconds: " + now.getSeconds();
+			document.getElementById("div1").innerHTML = out;
+			}*/
+			
+			/*var mydate = new Date(); //当前日期和时间
+			document.write("Object created on day number " + mydate.getDay() + "<br>");
+			mydate.setDate(15); //查看当月的某一天是星期几
+			document.write(	"After ameding date to 15th, the day number is " +  mydate.getDay());*/
+			
+			/*var mydate = new Date();
+			document.write("Created : " + mydate.toDateString() + "<br>");
+			mydate.setDate(mydate.getDate() + 7); //给日期增加7天
+			document.write("After adding 7 days : " + mydate.toDateString() + " " + mydate.toTimeString());*/
+			/*var radius = 1;
+			var area = Math.PI * radius * radius;
+			document.write(area + "<br>");
+			圆的面积
+			var circumference = 2 * Math.PI*radius;
+			document.write(circumference);
+			周长
+			*/
+			/*with(Math){
+				var myrand = random();
+				var newmyrand = ceil(myrand);
+				var biggest = max(3,4,5);
+				var height = round(76.35);
+			}
+			
+			document.write(myrand + "<br>");
+			document.write(newmyrand + "<br>");
+			document.write(biggest + "<br>");
+			document.write(height);
+			*/
+			var mydate = new Date(2011,11,25,12,35);
+			document.write(mydate + "<br><br>");
+			
+			
+			var height = 5;
+			var wide = 4;  //圆的面积公式 S =πR的平方，圆的周长 C = 2πR； 圆柱的体积公式 V = πR平方*h。
+			var Volume = Math.PI * wide * wide * height;
+			document.write("一个圆柱高为5米，宽为4米，求他的体积是多少？<br><br>" + 
+			"解：" + "圆柱的体积公式 V = πR平方*h<br>" + "\n宽为4，高位5，R = 宽<br>" + 
+			"\n π x 4 x 4 x 5 = 251.327m³ <br>" + "\n答：圆柱的体积大约为" +  Math.floor(Volume) + "m³;");
+			
+			alert("You're visited " + history.length + " web pages in this browser session");
+			prompt("前进 " + history.forward());
+			prompt("后退 " + history.backward());
+			prompt("回退三个页面" + history.go(-3));
+			prompt("前进三个页面" + history.go(3));
+		</script> 
+	</head>
+	<body>
+		<!--
+        	作者：ajksdp@qq.com
+        	时间：2018-12-25
+        	描述：当前系统时间
+       The current date and time are:<br>
+		<div id="div1">
+			
+		</div>
+		<script>
+			telltime();
+		</script>
+		<input type="button" onclick="location.reload()" value="Refresh">
+		 -->
+		
+		 
+	</body>
+</html>

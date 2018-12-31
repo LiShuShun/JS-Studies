@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var x;
+			var d = new Date().getDay();
+			function myfunction()
+			{
+				
+				switch (d)
+				{
+					case 3:
+					x="Today it's wedensday";
+					break;
+					case 6:
+					x="Today it's saturday";
+					break;
+					case 0:
+					x="Today it's sunday";
+					break;
+					case 4:
+					x="Today it's thursday!!!!";
+					break;
+					default:
+					x="Looking forward to the Weekend";
+				}
+				document.getElementById("demo").innerHTML=x;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<p>点击下面的按钮，会显示初基于今日日期的消息：</p>
+		<button type="button" onclick="myfunction()">点击这里!!</button>
+		<h4 id="demo"></h4>
+	</body>
+</html>

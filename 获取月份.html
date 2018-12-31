@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			// 按钮点击时调用这个方法计算月份对应的天数
+			function printDays() {
+				var a = document.getElementById("inputx").value; 
+				var month = a ? parseInt(a) : 0; // get from input control
+				// 计算月份中的天数
+				
+				var days = getdays(month);
+				// show days on text control
+				// 将天数显示到界面上，如果满足条件
+				if(days == 0) {
+					// 输入月份错误提示
+					document.getElementById("demo").innerText = "please input a month from 1 to 12";
+//					alert("please input a month from 1 to 12");
+				}else {
+					var str = "out is " + days.toString();
+					document.getElementById("demo").innerText = str;
+//					alert(str);
+				}
+			}
+//			 计算传入的月份对应的天数
+			function getdays(month){
+				// 如果月份不满足条件，返回0 表示 错误
+				if(month > 12 || month <1) {
+					return 0;
+				}
+				// 继续判断
+				if(month == 2) {
+					var mydate = new Date();
+					var year = mydate.getFullYear();
+					if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){ //判断是否为闰年
+						return 29;
+					}
+					else{
+						return 28;
+					}
+				}
+				//4,6,9,11为30天
+				if(month == 4 || month == 6 || month == 9 || month == 11){
+					return 30; 
+				}else{
+					return 31;
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<input id="inputx" />
+		<p id="demo">输入月份</p>
+		<button onclick="printDays()">获取日期</button>
+		
+	</body>
+	
+</html>

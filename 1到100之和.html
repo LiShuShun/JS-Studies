@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1到100的阿拉伯数字之和</title>
+		<script>
+			function getSum(){
+				var sum = 0;
+				for(var i=1;i<=100;i++){
+					sum +=i; //sum自身的值先加i在将值赋给左边等同于
+					/*sum = sum + i*/
+				}
+				document.write("1到100个数相加的结果为："+sum);
+			}
+		</script>
+		<script>
+				function myfunction(){
+				var Sum = 0;
+				for( var i = 1;i <100;i++){
+					Sum % i =0;
+				}
+				document.write("1到100的偶数和为：" +Sum);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="计算总数" onclick="getSum()">
+		<input type="button" value="计算偶数" onclick="myfunction()">
+	</body>
+</html>

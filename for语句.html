@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>for语句</title>
+		
+		
+		
+		
+		<style>
+			h1{
+				color:cornflowerblue;
+				font-size:20px;
+				font-weight: normal;
+				border:1px solid fuchsia;
+				width:100px;
+				height:20px;
+				display:inline-block;
+				text-overflow: ellipsis;
+				overflow:hidden;
+				white-space:nowrap;
+			}
+			h1:hover{
+				white-space:normal;
+				padding-bottom:100px;
+			}
+			p{
+				font-size:40px;
+			}
+		</style>
+		<script>
+			function myfunction()
+			{
+			var x = "";
+			var time = new Date().getHours();
+			if(time <10)
+			{
+				x="Good afternoon!!";
+			}
+			else if(time <20)
+			{
+				
+				x="Good day!!"
+			}
+			else 
+			{
+				x="Good miring!!";
+			}
+			document.getElementById("demo").innerHTML= x ;
+		}
+		</script>
+	</head>
+	<body>
+		<p>Hello： <h1 id="demo"></h1></p>
+		<button type="button" onclick="myfunction()">获取你的好心情吧！！！</button>
+	</body>
+</html>
